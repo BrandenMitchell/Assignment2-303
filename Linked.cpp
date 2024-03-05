@@ -118,7 +118,7 @@ void Linked::inserting(unsigned int index, string data) {
   }
 }
 
-unsigned int Linked::find(std::string key) {
+unsigned int Linked::search(std::string key) {
   bool found = false;
   node *temp = headPtr;
   while (temp != nullptr) {
@@ -163,7 +163,7 @@ string Linked::front() { return headPtr->data; }
 
 string Linked::back() { return tailPtr->data; }
 
-bool Linked::empty() {
+bool Linked::is_empty() {
   if (headPtr == nullptr)
     return true;
   else
