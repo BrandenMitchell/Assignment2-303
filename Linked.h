@@ -33,9 +33,9 @@ public:
 
   string front();
   string back();
-  bool empty();
+  bool is_empty();
 
   void inserting(unsigned int, string data);
   bool del_node(unsigned int);
-  unsigned int find(string key);
+  unsigned int search(string key);
 };
